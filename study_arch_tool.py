@@ -79,7 +79,7 @@ class _Container(object):
             directory (str): The path of the directory into which you want to dump.
         """
         def dump_resource(content):
-            resource_types = ['audio', 'image']
+            resource_types = ['Audio', 'Image']
             for r in resource_types:
                 for facet in content:
                     if facet.get(r):

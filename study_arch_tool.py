@@ -84,7 +84,7 @@ class _Container(object):
                 for facet in content:
                     if facet.get(r):
                         path = facet[r]
-                        relative_path = os.path.split(path)[1]
+                        relative_path = os.path.join(directory, os.path.split(path)[1])
                         shutil.copy(path, relative_path)
                         facet[r] = relative_path
 
